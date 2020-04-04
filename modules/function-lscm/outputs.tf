@@ -13,9 +13,6 @@
 # limitations under the License.
 
 
-terraform {
-  backend "gcs" {
-    bucket = "lscm-2233-tfstate"
-    prefix = "env/prod"
-  }
+output "lscm_url" {
+  value = "${google_cloudfunctions_function.https_trigger_url}"
 }

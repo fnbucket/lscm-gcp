@@ -14,8 +14,5 @@
 
 
 terraform {
-  backend "gcs" {
-    bucket = "lscm-2233-tfstate"
-    prefix = "env/prod"
-  }
+  required_version = "~> 0.11.0"
 }
